@@ -1,0 +1,25 @@
+r<h3> Search Contacts </h3>
+
+<form id="search_form" method="post" action="search_contacts">
+	<label>First Name</label>
+	  <input type="text" name="firstnm"><br>
+	<label>Phone Number</label>
+	  <input type="text" name="phone"><br>
+	<input type="submit" value="Submit">
+</form>
+
+<div id="search_results_display_area"><%= session[:search_table] %></div>
+<script>
+document.getElementById("search_form").addEventListener("submit", function(event){
+	event.preventDefault();
+	var search_form = document.getElementById("search_form");
+	var formData = new FormData(search_form);
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+    	if (this.readyState == 4 && this.status == 200) {
+			document.getElementById("search_results_display_area").innerHTML = this.responseText;
+    	}
+	};
+	xhttp.open("POST", "search_contacts", true);
+	xhttp.send(new FormData(search_form));
+</script>

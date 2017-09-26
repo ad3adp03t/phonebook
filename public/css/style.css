@@ -1,0 +1,128 @@
+
+
+h1 {
+	text-align: center;
+}
+
+#login_form {
+	text-align: center;
+}
+
+/* -------------------------------------- NAVBAR ----------------------------------------------*/
+
+#top_navbar {
+	/* Position the navbar at the top of the page */
+	top: 0;
+	/* Full width of the page*/
+	width: 100%;
+	/* *Should change to make more adaptive to screen size. */
+	height: auto;
+	/* Don't allow ugly spillover*/
+    overflow: hidden;
+    /* A little space below the navbar*/
+    margin-bottom: 15px;
+}
+
+
+
+
+/* NAVBAR LINKS */
+#top_navbar li {                         /* <--- All <li> items within the #top_navbar */
+    float: left;
+    display: block;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+    text-decoration: none;
+    display: inline;
+}
+
+
+/* -------------------------------------- FOOTER ----------------------------------------------*/
+
+footer {
+	width: 100%;
+    float: left;
+    margin-top: 1.5em;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   
+}
+
+
+/* -------------------------------- TOPPING CONTAINER -----------------------------------------*/
+
+#toppings_container{
+  	width: 20%;
+  	margin-left: 1em;
+  	margin-right: 1em;
+  	padding: 20px;
+	border: 2px solid #666;
+	background: #ffffff;
+	float: left;
+  	background-color: white;
+}
+
+#toppings_container h1 {
+	margin-left: 27px; /**/
+	font-size: 1.25em;
+}
+
+#toppingsf_container ul{
+	width: 20px;
+  	margin-left: 0.1em;
+  	padding: 10px;
+}
+
+
+/* ----------------------------------- MAIN CONTAINER ----------------------------------------- */
+
+#main_container {
+
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  padding: 1em;
+	border: 2px solid #666;
+	background: #ffffff;
+	float: left;
+	background-color: lightblue;
+	text-align: center;
+}
+
+#main_container ol{
+	text-align: left;
+}
+
+/*----- SUB CONTAINER LEFT -----*/
+#sub_container_left{
+
+  		width: 45%;
+  		border: 2px solid #666;
+  		float: left;
+  		border: 2px solid black;
+  		text-align: center;
+  		margin: 1em;
+}
+
+#sub_container_left h1{
+  		text-align: center;
+}
+
+/*----- SUB CONTAINER RIGHT ----*/
+#sub_container_right{
+
+  		width: 45%;
+  		border: 2px solid #666;
+  		float: left;
+  		border: 2px solid black;
+  		text-align: center;
+  		margin: 1em;
+}
+
+#sub_container_right h1{
+  		text-align: center;
+}

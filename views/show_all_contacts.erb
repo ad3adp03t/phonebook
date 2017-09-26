@@ -1,0 +1,31 @@
+
+<h1>All Listings</h1>
+
+<form >
+<table>
+  <tr>
+    <td></td>
+    <td>First Name</td>
+    <td>Last Name</td>
+    <td>Street Address</td>
+    <td>City, State, Zip</td>
+    <td>Phone Number</td>
+    <td>Email</td>
+  </tr>
+
+<% $db.exec("SELECT * FROM phonedbtable").each do |contact| %>
+<form method="post"  action="handle_update">
+  <tr>
+    <td><%= "<input type=\"hidden\" name=\"id\" value=\"#{contact['id']}\"" %></td>
+    <td><%= "<input type=\"text\" name=\"firstnm\" value=\"#{contact['firstnm']}\"" %></td>
+    <td><%= "<input type=\"text\" name=\"lastnm\" value=\"#{contact['lastnm']}\"" %></td>
+    <td><%= "<input type=\"text\" name=\"streetnm\" value=\"#{contact['streetnm']}\"" %></td>
+    <td><%= "<input type=\"text\" name=\"zip_cty_st\" value=\"#{contact['zip_cty_st']}\"" %></td>
+    <td><%= "<input type=\"text\" name=\"phone\" value=\"#{contact['phone']}\"" %></td>
+    <td><%= "<input type=\"text\" name=\"email\" value=\"#{contact['email']}\"" %></td>
+    <td><input type="submit" value="Update"></td>
+  <tr>
+</form>
+<% end %>
+
+</table>

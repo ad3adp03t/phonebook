@@ -1,0 +1,18 @@
+<h1>Please enter contact information</h1>
+
+<form method="post" action="handle_submission">
+    <label>First Name</label>
+    <input type="text" name="firstnm"><br>
+    <label>Last Name</label>
+    <input type="text" name="lastnm"><br>
+    <label>Street Address</label>
+    <input type="text" name="streetnm"><br>
+    <label>City,State and Zip Code</label>
+    <input type="text" name="zip_cty_st"> EX: Beckley, Wv, 25081<br>
+    <label>Email</label>
+    <input type="text" name="email"><br>
+    <label>Phone Number</label>
+    <input type="tel" name="phone" pattern="^\d{1}-\d{3}-\d{3}-\d{4}$" required>Format: #-###-###-####<br>
+
+    <input type="submit" value="Submit">
+</form>
